@@ -16,7 +16,18 @@ fruits.each do |elem|
   puts elem.length
 end
 
-upcase_arry = fruits.dup
+upcase_arry = []
 
-p upcase_arry.each { |elem| elem.upcase! }
+fruits.each { |elem| upcase_arry << elem.upcase }
+
+p upcase_arry
+
+p fruits
+
+fruits.each do |elem|
+  if elem.include?('g')
+    puts elem
+  end
+end
+
 
